@@ -582,3 +582,11 @@ ul{
   font-size: 1.1rem;
   font-weight: 700;
 }
+/* Estils que només s'apliquen a "Mòbil" */
+@media (max-width: 768px) {
+
+  .center-text{
+    
+  }
+
+}
