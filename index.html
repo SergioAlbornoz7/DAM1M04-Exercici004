@@ -15,6 +15,7 @@
                 <li><a href="#"></a>Support</li>
             </ul>
         </nav>
+        <hr class="footer-divider">
         <!--menu SI stiky-->
         <nav class="topnav">
             <a><img src="imatges/ico_pixelamtor-pro-2.0@2x.png" alt="description" width="30" height="30"><strong>Pixelmator Pro</strong> 3.7</a>
@@ -248,30 +249,51 @@
             </div> 
         </div>  
         <!--Contenedor 4 (fondo gris)-->
-        <div  class="autocenter" style="background-color: rgb(236, 236, 236); color: rgb(7, 7, 7); width: 100%;">
-            <h1>Real-time, nondestructive, blockbuster effects.</h1>
-            <p  class="center-text">Pixelmator Pro comes with a collection of over 60 versatile effects that you can mix and combine 
-            to develop any artistic or special effects you can imagine. Effects are nondestructive, so you can 
-            always edit, rearrange, or remove an effect after applying it. And you can even apply multiple effects 
-            to a single layer — seeing all your changes in real time.</p>
-            <div class="card0">
-                <img src="imatges/img_effects@2x.png" alt="pantalla" width="400">
+        <section class="effects-section">
+            <div class="container">
+    
+                <h1 class="autocenter">Real-time, nondestructive, blockbuster effects.</h1>
+                <p class="intro-text">
+                Pixelmator Pro comes with a collection of over 60 versatile effects that you can mix and combine 
+                to develop any artistic or special effects you can imagine. Effects are nondestructive, so you can 
+                always edit, rearrange, or remove an effect after applying it. And you can even apply multiple effects 
+                to a single layer — seeing all your changes in real time.
+                </p>
+
+                    <!-- Flexbox para las tarjetas -->
+                    <div class="cards-flex">
+      
+                    <!-- Columna izquierda: solo imagen -->
+                        <div class="card-image">
+                        <img src="imatges/img_effects@2x.png" alt="Efectos en Pixelmator Pro">
+                        </div>
+
+                        <!-- Columna derecha: dos tarjetas apiladas -->
+                        <div class="cards-right">
+        
+                        <div class="card card-white">
+                        <h4>Over 60 Effects</h4>
+                        <p>
+                        Choose from over 60 effects, carefully arranged into ten groups — Blur,
+                        Distortion, Sharpen, Color Adjustments, Tile, Stylize, Halftone, Generator, 
+                        Fill, and Others.
+                        </p>
+                        </div>
+
+                        <div class="card card-pink">
+                        <h4>Effects Browser</h4>
+                        <p>
+                        The effects browser makes it incredibly easy to find just the effect you need. 
+                        Browse effects, search for them by name, see instant previews, and quickly apply 
+                        effects to your currently selected object.
+                        </p>
+                        <img src="imatges/img_effects-browser@2x.png" alt="Effects Browser">
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="card0" style="background-color: rgb(255, 255, 255); color: rgb(6, 6, 6); width: 100%;">
-                <div>
-                <H4>Over 60 Effects</H4>
-                <p>Choose from over 60 effects, carefully arranged into ten groups — Blur,
-                Distortion, Sharpen, Color Adjustments, Tile, Stylize, Halftone, Generator, 
-                Fill, and Others.</p>
-            </div>
-            <div class="card0" style="background-color: rgb(255, 3, 154); color: rgb(255, 255, 255); width: 100%;">
-                <h4>Effects Browser</h4>
-                <p>The effects browser makes it incredibly easy to find just the effect you need. 
-                Browse effects, search for them by name, see instant previews, and quickly apply 
-                effects to your currently selected object.</p>
-                <img src="imatges/img_effects-browser@2x.png" alt="rosa">
-            </div>
-        </div>
+        </section>
             
             <div class="autocenter">
                 <h1>Advanced Features for advanced workflows</h1>
@@ -448,7 +470,7 @@
         <!--Pie de pagina-->
         <footer class="footerCol ul li" style="background-color: rgb(209, 209, 209); color: rgb(0, 0, 0); width: 100%;">
             <!--Col-->
-            <div class="4col">
+            <div class="footer-columns">
                
                 <ul class="column"> 
                     <li><a>Pixelmator Pro</a></li>
@@ -474,18 +496,16 @@
                     <li>Support</li>
                     <li>Privacy Policy</li>
                 </ul>
-                    
             </div>
+            <hr class="footer-divider">
                 <!--Bottom-->
-                <div>
+                <div class="footer-legal">
                  <p>Corporate Address: Apple Inc., One Apple Park Way, Cupertino, CA 95014<br>
                 Contact Email: info@pixelmator.com<br>
                 Data about the company is registered with Secretary of State of the State of 
                 California under entity number 0806592.<br>
                 Copyright © 2025 Apple Inc. All rights reserved.</p>
-
-
-                </div>
+            </div>
             </div>    
         </footer>
     </body>

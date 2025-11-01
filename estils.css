@@ -329,6 +329,21 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap; /*permite adaptabilidad a pantallas pequeñas*/
 }
+/* Línea separadora */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #bbb;   /* Color sutil */
+  margin: 30px auto;
+  width: 100%;
+  max-width: 1200px;
+}
+/* Texto legal: alineado con las columnas */
+.footer-legal {
+  text-align: left;
+  max-width: 1200px;
+  margin: 30px auto;
+  line-height: 1.5;
+}
 
 .footerCol {
   display: flex;
@@ -488,15 +503,22 @@ ul{
   line-height: 1.45;
   letter-spacing: -0.002em;
 }
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  column-count: 4;
+  gap: 30px;
+  justify-content:center;
+  max-width: 1200px;
+  margin: 30px auto;
+  width: 100%;
+}
+
 .column {
-  display:flex;
-  flex: 1;
-  margin: 0 10px;
-  margin: 10px 0;
-  justify-content: space-between;
-  text-align: center;
-  list-style: none;
-  padding: 0;
+  flex: 4;
+  flex-direction: column;
+  min-width: 180px;
 }
 .col4 {
   display: flex;
@@ -589,4 +611,158 @@ ul{
     
   }
 
+}
+/*seccion targetas contenedor gris 3 targetas una rosa*/
+.effects-section {
+  background-color: #ececec;
+  color: #070707;
+  padding: 80px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.effects-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: #333;
+}
+
+/* === FLEXBOX LAYOUT === */
+.cards-flex {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* === TARJETA IMAGEN GRANDE (izquierda) === */
+.card-image {
+  flex: 1.2;
+  margin: 0;           /* Sin margen */
+  padding: 0;          /* Sin padding */
+  border: none;
+  min-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  width: 150%;
+  height: 150%;
+  object-fit: cover;        /* Cubre todo el contenedor */
+  display: block;
+  border-radius: 16px;
+  margin: 0;           /* Sin margen */
+  padding: 0;          /* Sin padding */
+  border: none
+}
+
+/* Columna derecha: apiladas */
+.cards-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-width: 280px;
+}
+
+/* Tarjetas base */
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+  text-align: left;
+}
+
+/* Tarjeta blanca */
+.card-white {
+  background-color: #fff;
+}
+
+.card-white h4 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.card-white p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Tarjeta rosa */
+.card-pink {
+  background-color: #ffd6e7;
+  color: #fff;
+  padding: 32px 32px 0; /* 0 en la parte inferior */
+}
+
+.card-pink h4 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-pink p {
+  margin: 0 0 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.card-pink img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  align-self: stretch;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* === RESPONSIVE: apilar en móvil === */
+@media (max-width: 900px) {
+  .cards-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-image,
+  .cards-right {
+    flex: 1;
+    width: 100%;
+  }
+
+  .effects-section h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .card-white,
+  .card-pink {
+    text-align: center;
+  }
 }
