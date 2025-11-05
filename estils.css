@@ -228,16 +228,6 @@ button {
   min-width: 275px;
   overflow: hidden;
 }
-.backImage {
-  background: center / cover url("./imageTrekking.jpg");
-  border-radius: 100%;
-  box-shadow: inset 0px 1px 15px 9px rgba(0,0,0,0.20);
-  box-sizing: border-box;
-  height: 150px;
-  margin: 16px;
-  overflow: hidden;
-  width: 150px;
-}
 .car2 {
   overflow: hidden;
   display: flex;
@@ -283,31 +273,6 @@ button {
 .card3 > div > h1 { 
   margin: 0;
 }
-
-/*foto estil vintage*/
-.vintageBlock {
-  box-sizing: border-box;
-  padding: 32px;
-  width: 80%;
-}
-
-.vintageFrame {
-  background: linear-gradient(-15deg, #faf7e3, #d7ca99);
-  border-radius: 16px;
-  box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.20);
-  padding: 16px;
-  transform: rotate(-2deg);
-  transition: all 0.3s ease-in-out;
-}
-/*retallar text*/
-.truncate-single {
-  width: 250px;             /* amplada màxima */
-  white-space: nowrap;      /* no fer salts de línia */
-  overflow: hidden;         /* amaga el que sobrepassa */
-  text-overflow: ellipsis;  /* mostra ... al final */
-  border: 1px solid #ccc;
-  padding: 4px;
-}
 /* ===== HERO FLEX ===== */
 .hero{
   height: 40vh;
@@ -345,31 +310,15 @@ footer {
   margin: 30px auto;
   line-height: 1.5;
 }
-
-.footerCol {
-  display: flex;
-  flex-direction: column;
-  flex: 1fr 1fr 1fr 1fr;
-  min-width: 200px;
-  margin: 10px;
-}
-
 .footerCol {
   display: flex;
   flex-direction: column;
   flex: 1fr 1fr 1fr 1fr;
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.footerCol {
-  display: flex;
-  flex-direction: column;
-  flex: 1fr 1fr 1fr 1fr;
   margin: 6px 0;
+  min-width: 200px;
 }
-
 .footerBottom {
   text-align: center;
   font-size: 0.9em;
@@ -377,54 +326,7 @@ footer {
   margin-top: 15px;
   border-top: 1px solid #444;
   width: 100%;
-}
-/*taula*/
-.taulaExemple{
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-/*Cabecera*/
-.taulaExemple thead{
-  background-color: var(--color-header);
-  color: white;
-  text-align: left;
-}
-
-.taulaExemple th,
-.taulaExemple td{
-  padding: 10px 14px;
-  border-bottom: 1px solid #ddd;
-}
-
-/*Primera columna*/
-.taulaExemple td:first-child,
-.taulaExemple th:first-child{
-  font-weight: 600;
-  background-color: rgba(0, 64, 128, 0.05);
-}
-
-/*Filas impares*/
-.taulaExemple tbody tr:nth-child(odd){
-  background-color: var(--color-odd-row);
-}
-
-/*Celdas destacadas*/
-.taulaExemple td.destacada{
-  background-color: var(--color-highlight);
-  font-weight: bold;
-  text-align: center;
-  border: 2px solid #e0b000;
-}
-
-/*Efecto hover*/
-.taulaExemple tbody tr:hover{
-  background-color: #eef4ff;
-}
-
-        
+}     
 .main-nav__nav-link {
   position: relative;
   padding-bottom: 17px;
@@ -432,19 +334,6 @@ footer {
   color: #000;
   line-height: 16px;
   letter-spacing: -0.005em;
-}
-.div {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-}
-.templatesHero__artwork {
-  position: relative;
-  z-index: 0;
-  height: 100vh;
-  max-height: 927px;
 }
 .autocenterContainer {
   justify-items: center;
