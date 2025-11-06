@@ -31,6 +31,15 @@ button {
   border-radius: 10px;
   border: none;
 }
+.boton-rosa {
+  background: none;           /* Sin fondo */
+  padding:2%;
+  border: 3px solid pink;     /* Borde rosa */
+  color: pink;                /* Texto rosa */
+  font-size: 16px;            /* Tamaño de letra */
+  cursor: pointer;            /* Mano al pasar el ratón */
+  border-radius: 20px;           
+}
 .main-wrapper {
   max-width: 1264px;
   margin: 0 auto;
