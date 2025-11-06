@@ -46,6 +46,10 @@ button {
   width: 100%;
   padding: 0 16px;
 }
+.centradogeneral {
+  max-width: 1268px;
+  align-self: center;
+}
 /*TOPNAV*/
 .topnav {
   --horizontal-padding: 16px; /* àmbit local */
