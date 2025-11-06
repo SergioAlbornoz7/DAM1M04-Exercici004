@@ -176,9 +176,11 @@ button {
   justify-content: center;
 }
 .card0 { 
+  
   border: solid 1px lightgray;
   border-radius: 16px;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
+  align-items: stretch;
   display: inline-block;
   flex-direction: column;
   justify-content: space-between;
@@ -187,7 +189,7 @@ button {
   min-width: 275px;
   overflow: hidden;
 }
-.card0 > img { 
+.card0 > img {
   box-sizing: border-box;
   width: 86%;
   margin: 7%;
@@ -225,7 +227,9 @@ button {
   margin: 0;
 }
 .card2 {
-  align-items: center;
+  flex: 1;
+  align-items: stretch;
+  text-align:block; 
   border: solid 1px lightgray;
   border-radius: 16px;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.20);
@@ -233,7 +237,7 @@ button {
   flex-direction: row;
   justify-content: space-around;
   margin: 16px;
-  max-width: 70%;
+  max-width: 80%;
   min-width: 275px;
   overflow: hidden;
 }
