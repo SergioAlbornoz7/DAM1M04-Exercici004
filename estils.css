@@ -510,10 +510,12 @@ ul{
 /* Estils que només s'apliquen a "Mòbil" */
 @media (max-width: 768px) {
 
-  .center-text{
-    
+}
+@media (max-width: 1200PX) {
+  .topcard3b{
+    position: relative;
+    margin-top: -15%;
   }
-
 }
 /*seccion targetas contenedor gris 3 targetas una rosa*/
 .effects-section {
