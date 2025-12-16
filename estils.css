@@ -171,7 +171,6 @@ button {
   padding-left: var(--horizPadding);
   padding-right: var(--horizPadding);
   width: calc(100% - 2 * var(--horizPadding));
- 
 }
 .cardsContainer2 { 
   display: grid;
